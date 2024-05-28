@@ -1,22 +1,20 @@
-<!-- views/login.php -->
+<!-- Create a form for password reset -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Forgot Password</title>
     <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
     <?php include 'header.php'; ?>
     <div class="container">
-        <h2>Login</h2>
+        <h2>Forgot Password</h2>
         <form action="/src/auth.php" method="POST">
-            <input type="hidden" name="action" value="login">
+            <input type="hidden" name="action" value="forgot_password">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
+            <button type="submit">Reset Password</button>
         </form>
     </div>
     <?php include 'footer.php'; ?>
